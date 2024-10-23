@@ -23,18 +23,28 @@ def check_between_equal(list1, val1, val2):
 
 def create_final_docs(path_directory):
     document_files = os.listdir(path_directory)
-    list_n = [(0, 0, 595.08, 760), (0, 0, 595.32, 780), (0, 0, 595.32, 760)]
+    list_n = [(0, 0, 595, 760), (0, 0, 595, 780)]
     documents = []
     total_words = 0
 
     for file in document_files:
         if os.path.isfile(os.path.join(path_directory + '/', file)):
-            if file == "fia_2023_formula_1_sporting_regulations_-_issue_4_-_2023-02-22.pdf":
+            # if file == "fia_2023_formula_1_sporting_regulations_-_issue_4_-_2023-02-22.pdf":
+            #     n = list_n[0]
+            # elif file == "fia_2023_formula_1_technical_regulations_-_issue_5_-_2023-02-22.pdf":
+            #     n = list_n[1]
+            # elif file == "fia_formula_1_financial_regulations_iss.14_.pdf":
+            #     n = list_n[2]
+            # else:
+            #     raise TypeError("ATTENTION: There is a pdf file non considered")
+            
+            print("\n\n" , file)
+            if file == "ESTRATEGIAS_COBRANZA.pdf":
                 n = list_n[0]
-            elif file == "fia_2023_formula_1_technical_regulations_-_issue_5_-_2023-02-22.pdf":
+            elif file == "POLITICAS_Y_NOTIFICACIONES_FLUJO_INTERCOBEC_COBRANZA.pdf":
                 n = list_n[1]
-            elif file == "fia_formula_1_financial_regulations_iss.14_.pdf":
-                n = list_n[2]
+            # elif file == "fia_formula_1_financial_regulations_iss.14_.pdf":
+            #     n = list_n[2]
             else:
                 raise TypeError("ATTENTION: There is a pdf file non considered")
             

@@ -10,3 +10,5 @@ openai==1.41.0
 pypdf==5.0.1
 pdfplumber==0.11.4
 tiktoken=0.8.0
+IPython==8.28.0
+python-dotenv=1.0.1
