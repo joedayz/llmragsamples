@@ -162,3 +162,5 @@ cython_debug/
 #.idea/
 
 faiss_inicial/
+
+.env
