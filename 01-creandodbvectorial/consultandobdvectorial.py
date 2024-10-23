@@ -1,10 +1,10 @@
 
-
+import os
 from langchain_community.vectorstores import FAISS  # Para la carga y búsqueda en la base de datos vectorial
 from langchain_openai import OpenAIEmbeddings  # Para las embeddings de OpenAI
-from config import OPENAI_API_KEY  # Para cargar la clave de la API de OpenAI
+ # Para cargar la clave de la API de OpenAI
 
-
+OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
 
 #---------------------------------------------------------------------
 # LLAMADA A LA BASE DE DATOS VECTORIAL

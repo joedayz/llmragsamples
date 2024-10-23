@@ -1,8 +1,10 @@
+import os
 from langchain_community.document_loaders import PyPDFLoader
 from langchain_openai import OpenAIEmbeddings
 from langchain.text_splitter import CharacterTextSplitter
 from langchain_community.vectorstores import FAISS
-from config import OPENAI_API_KEY
+
+OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
     
 #---------------------------------------------------------------------
 # Definir una clase de documento
